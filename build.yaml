@@ -1,0 +1,18 @@
+targets:
+  $default:
+    builders:
+      json_serializable:
+        enabled: true
+        generate_for:
+          - lib/models/**/*.dart
+          - lib/cubit/**/*.dart
+          - lib/models/*.dart
+          - lib/cubit/*.dart
+
+      freezed:
+        enabled: true
+        generate_for:
+          - lib/models/**/*.dart
+          - lib/cubit/**/*.dart
+          - lib/models/*.dart
+          - lib/cubit/*.dart
